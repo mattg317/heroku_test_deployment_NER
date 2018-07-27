@@ -2,6 +2,7 @@ import spacy
 import tweepy
 import time
 import pandas as pd
+import os
 
 # For testing locally
 # from config import (consumer_key,
