@@ -11,7 +11,7 @@ import pandas as pd
 
 
 # For deploying to Heroku
-Get config variable from environment variables
+# Get config variable from environment variables
 consumer_key = os.environ.get(consumer_key)
 consumer_secret = os.environ.get(consumer_secret)
 access_token = os.environ.get(access_token)
@@ -70,6 +70,7 @@ def update_twitter():
 # Have the Twitter bot update once a day for a week
 days = 0
 while days < 7:
+    print("Updating Twitter")
 
     # Update the twitter
     update_twitter()
