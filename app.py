@@ -6,17 +6,17 @@ import time
 
 
 # For testing locally
-# from config import (consumer_key,
-#                     consumer_secret,
-#                     access_token,
-#                     access_token_secret)
+from config import (consumer_key,
+                    consumer_secret,
+                    access_token,
+                    access_token_secret)
 
 # For deploying to Heroku
 # Get config variable from environment variables
-consumer_key = os.environ.get("consumer_key")
-consumer_secret = os.environ.get("consumer_secret")
-access_token = os.environ.get("access_token")
-access_token_secret = os.environ.get("access_token_secret")
+# consumer_key = os.environ.get("consumer_key")
+# consumer_secret = os.environ.get("consumer_secret")
+# access_token = os.environ.get("access_token")
+# access_token_secret = os.environ.get("access_token_secret")
 
 # Setup Tweepy API Authentication
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
