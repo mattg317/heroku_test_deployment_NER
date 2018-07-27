@@ -4,6 +4,8 @@ import spacy
 import tweepy
 import time
 import en_core_web_sm
+import matplotlib
+matplotlib.use('Agg')
 
 
 # For testing locally
@@ -66,7 +68,7 @@ def update_twitter():
     bar = label_frequency.plot.bar()
     fig = bar.get_figure()
     fig.savefig('box.png')
-    api.update_with_media("box.png", "Break down of tweet labels")
+    #api.update_with_media("box.png", "Break down of tweet labels")
 
 
 # Have the Twitter bot update once a day for a week
