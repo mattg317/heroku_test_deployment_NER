@@ -26,6 +26,7 @@ api = tweepy.API(auth, parser=tweepy.parsers.JSONParser())
 # Load model
 nlp = en_core_web_sm.load()
 
+
 # This will update twitter
 def update_twitter():
 
